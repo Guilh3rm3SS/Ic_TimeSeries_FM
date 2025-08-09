@@ -1,0 +1,1058 @@
+/media/work/guisouza/Ic_TimeSeries_FM/timesfm/finetuning_torch.py:22: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df = pd.read_csv(url, index_col=0, parse_dates=True)
+ See https://github.com/google-research/timesfm/blob/master/README.md for updated APIs.
+Loaded PyTorch TimesFM, likely because python version is 3.11.0rc1 (main, Aug 12 2022, 10:02:14) [GCC 11.2.0].
+
+Running finetuning with context_len=32, horizon_len=1
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 87018.76it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 68534.38it/s]
+wandb: Currently logged in as: guilherme-ss (guilherme-ss-universidade-federal-de-ouro-preto) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+2025/07/01 01:35:22 ERROR failed to get logger path error="error creating log directory: mkdir /.cache: permission denied"
+2025/07/01 01:35:22 INFO Will exit if parent process dies. ppid=5244
+2025/07/01 01:35:22 INFO server is running addr=127.0.0.1:39649
+2025/07/01 01:35:22 INFO connection: ManageConnectionData: new connection created id=127.0.0.1:36190
+2025/07/01 01:35:23 INFO handleInformInit: received streamId=2t8qp1vu id=127.0.0.1:36190
+2025/07/01 01:35:23 INFO handleInformInit: stream started streamId=2t8qp1vu id=127.0.0.1:36190
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /media/work/guisouza/Ic_TimeSeries_FM/wandb/run-20250701_013522-2t8qp1vu
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run fluent-star-17
+wandb: ⭐️ View project at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: 🚀 View run at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/2t8qp1vu
+Created datasets:
+- Training samples: 389
+- Validation samples: 389
+- Test samples: 937
+- Using frequency type: 0
+Traceback (most recent call last):
+  File "/media/work/guisouza/Ic_TimeSeries_FM/timesfm/finetuning_torch.py", line 442, in <module>
+    predict_separated_finetunning()
+  File "/media/work/guisouza/Ic_TimeSeries_FM/timesfm/finetuning_torch.py", line 374, in predict_separated_finetunning
+    simple_data = single_gpu_example(context_len=context_len, horizon_len=horizon_len, pred_name=simple_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/work/guisouza/Ic_TimeSeries_FM/timesfm/finetuning_torch.py", line 337, in single_gpu_example
+    wandb.run.save()
+  File "/usr/local/extralibs/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/extralibs/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/extralibs/wandb/sdk/wandb_run.py", line 436, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Run.save() missing 1 required positional argument: 'glob_str'
+2025/07/01 01:35:23 INFO handleInformTeardown: server teardown initiated id=127.0.0.1:36190
+2025/07/01 01:35:23 INFO server is shutting down
+2025/07/01 01:35:23 INFO connection: closing id=127.0.0.1:36190
+2025/07/01 01:35:23 INFO connection: closed successfully id=127.0.0.1:36190
+2025/07/01 01:35:23 ERROR processOutgoingData: flush error error="write tcp 127.0.0.1:39649->127.0.0.1:36190: use of closed network connection" id=127.0.0.1:36190
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33mfluent-star-17[0m at: [34mhttps://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/2t8qp1vu[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250701_013522-2t8qp1vu/logs[0m
+2025/07/01 01:35:25 INFO handleInformTeardown: server shutdown complete id=127.0.0.1:36190
+2025/07/01 01:35:25 INFO connection: ManageConnectionData: connection closed id=127.0.0.1:36190
+2025/07/01 01:35:25 INFO server is closed
+/media/work/guisouza/Ic_TimeSeries_FM/timesfm/finetuning_torch.py:22: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df = pd.read_csv(url, index_col=0, parse_dates=True)
+ See https://github.com/google-research/timesfm/blob/master/README.md for updated APIs.
+Loaded PyTorch TimesFM, likely because python version is 3.11.0rc1 (main, Aug 12 2022, 10:02:14) [GCC 11.2.0].
+
+Running finetuning with context_len=32, horizon_len=1
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 83886.08it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 84562.58it/s]
+wandb: Currently logged in as: guilherme-ss (guilherme-ss-universidade-federal-de-ouro-preto) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+2025/07/01 01:36:38 ERROR failed to get logger path error="error creating log directory: mkdir /.cache: permission denied"
+2025/07/01 01:36:38 INFO Will exit if parent process dies. ppid=5351
+2025/07/01 01:36:38 INFO server is running addr=127.0.0.1:44157
+2025/07/01 01:36:38 INFO connection: ManageConnectionData: new connection created id=127.0.0.1:39462
+2025/07/01 01:36:38 INFO handleInformInit: received streamId=hrox9tqi id=127.0.0.1:39462
+2025/07/01 01:36:38 INFO handleInformInit: stream started streamId=hrox9tqi id=127.0.0.1:39462
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /media/work/guisouza/Ic_TimeSeries_FM/wandb/run-20250701_013638-hrox9tqi
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run pleasant-wind-18
+wandb: ⭐️ View project at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: 🚀 View run at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/hrox9tqi
+wandb: uploading wandb-summary.json; uploading config.yaml
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:         epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb: learning_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:    train_loss ▁▁▁▁▁█▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_loss ▂▃▆▂█▁▂▂▁▂▃▃▃▂█▃▅▆▅▆
+wandb: 
+wandb: Run summary:
+wandb:         epoch 20
+wandb: learning_rate 0.0001
+wandb:    train_loss 0.8371
+wandb:      val_loss 2.45404
+wandb: 
+wandb: 🚀 View run Mercedes_Level_32_1 at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/hrox9tqi
+wandb: ⭐️ View project at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250701_013638-hrox9tqi/logs
+2025/07/01 01:37:43 INFO handleInformFinish: finish message received streamId=hrox9tqi id=127.0.0.1:39462
+2025/07/01 01:37:43 INFO handleInformFinish: stream closed streamId=hrox9tqi id=127.0.0.1:39462
+Created datasets:
+- Training samples: 389
+- Validation samples: 389
+- Test samples: 937
+- Using frequency type: 0
+
+Starting finetuning...32, 1
+
+Finetuning completed!
+Training history: 20 epochs
+Previsão sem covariáveis: Mercedes_Level_32_1
+
+Running finetuning with context_len=32, horizon_len=7
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 53498.78it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 94466.31it/s]
+2025/07/01 01:38:27 INFO handleInformInit: received streamId=4ghng6m1 id=127.0.0.1:39462
+2025/07/01 01:38:27 INFO handleInformInit: stream started streamId=4ghng6m1 id=127.0.0.1:39462
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /media/work/guisouza/Ic_TimeSeries_FM/wandb/run-20250701_013827-4ghng6m1
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run youthful-hill-19
+wandb: ⭐️ View project at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: 🚀 View run at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/4ghng6m1
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:         epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb: learning_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:    train_loss █▇▆▅▄▄▃▂▂▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_loss ▁▂▅▆▅▆▆▆▆▆▇▇▇▇▇▇▇▆█▆
+wandb: 
+wandb: Run summary:
+wandb:         epoch 20
+wandb: learning_rate 0.0001
+wandb:    train_loss 0.13878
+wandb:      val_loss 2.6145
+wandb: 
+wandb: 🚀 View run Mercedes_Level_32_7 at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/4ghng6m1
+wandb: ⭐️ View project at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250701_013827-4ghng6m1/logs
+2025/07/01 01:39:29 INFO handleInformFinish: finish message received streamId=4ghng6m1 id=127.0.0.1:39462
+2025/07/01 01:39:29 INFO handleInformFinish: stream closed streamId=4ghng6m1 id=127.0.0.1:39462
+Created datasets:
+- Training samples: 389
+- Validation samples: 389
+- Test samples: 937
+- Using frequency type: 0
+
+Starting finetuning...32, 7
+
+Finetuning completed!
+Training history: 20 epochs
+Previsão sem covariáveis: Mercedes_Level_32_7
+
+Running finetuning with context_len=32, horizon_len=15
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 99864.38it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 100824.62it/s]
+2025/07/01 01:40:18 INFO handleInformInit: received streamId=70w5npvj id=127.0.0.1:39462
+2025/07/01 01:40:18 INFO handleInformInit: stream started streamId=70w5npvj id=127.0.0.1:39462
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /media/work/guisouza/Ic_TimeSeries_FM/wandb/run-20250701_014017-70w5npvj
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run apricot-dragon-20
+wandb: ⭐️ View project at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: 🚀 View run at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/70w5npvj
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:         epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb: learning_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:    train_loss ▁▁▁▁▁▁▁▁██▂▁▁▁▁▁▁▁▁▁
+wandb:      val_loss ▁▃▅▅█▆▄▆▄▃▇▃▁▁▁▂▂▁▁▂
+wandb: 
+wandb: Run summary:
+wandb:         epoch 20
+wandb: learning_rate 0.0001
+wandb:    train_loss 1.77486
+wandb:      val_loss 2.00105
+wandb: 
+wandb: 🚀 View run Mercedes_Level_32_15 at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/70w5npvj
+wandb: ⭐️ View project at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250701_014017-70w5npvj/logs
+2025/07/01 01:41:20 INFO handleInformFinish: finish message received streamId=70w5npvj id=127.0.0.1:39462
+2025/07/01 01:41:20 INFO handleInformFinish: stream closed streamId=70w5npvj id=127.0.0.1:39462
+Created datasets:
+- Training samples: 389
+- Validation samples: 389
+- Test samples: 937
+- Using frequency type: 0
+
+Starting finetuning...32, 15
+
+Finetuning completed!
+Training history: 20 epochs
+Previsão sem covariáveis: Mercedes_Level_32_15
+
+Running finetuning with context_len=32, horizon_len=30
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 99391.09it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 100824.62it/s]
+2025/07/01 01:42:02 INFO handleInformInit: received streamId=q51y1a20 id=127.0.0.1:39462
+2025/07/01 01:42:02 INFO handleInformInit: stream started streamId=q51y1a20 id=127.0.0.1:39462
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /media/work/guisouza/Ic_TimeSeries_FM/wandb/run-20250701_014202-q51y1a20
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dandy-surf-21
+wandb: ⭐️ View project at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: 🚀 View run at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/q51y1a20
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:         epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb: learning_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:    train_loss █▇▆▄▃▃▃▂▂▂▂▁▁▁▁▁▁▁▁▁
+wandb:      val_loss ▁█▂▃▄▇▄▄█▄▄▅▅▅▅▆▅▅▆▇
+wandb: 
+wandb: Run summary:
+wandb:         epoch 20
+wandb: learning_rate 0.0001
+wandb:    train_loss 0.08417
+wandb:      val_loss 3.24024
+wandb: 
+wandb: 🚀 View run Mercedes_Level_32_30 at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/q51y1a20
+wandb: ⭐️ View project at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250701_014202-q51y1a20/logs
+2025/07/01 01:43:04 INFO handleInformFinish: finish message received streamId=q51y1a20 id=127.0.0.1:39462
+2025/07/01 01:43:04 INFO handleInformFinish: stream closed streamId=q51y1a20 id=127.0.0.1:39462
+Created datasets:
+- Training samples: 389
+- Validation samples: 389
+- Test samples: 937
+- Using frequency type: 0
+
+Starting finetuning...32, 30
+
+Finetuning completed!
+Training history: 20 epochs
+Previsão sem covariáveis: Mercedes_Level_32_30
+
+Running finetuning with context_len=160, horizon_len=1
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 98922.26it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 105916.77it/s]
+2025/07/01 01:43:50 INFO handleInformInit: received streamId=vay4j4pm id=127.0.0.1:39462
+2025/07/01 01:43:50 INFO handleInformInit: stream started streamId=vay4j4pm id=127.0.0.1:39462
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /media/work/guisouza/Ic_TimeSeries_FM/wandb/run-20250701_014350-vay4j4pm
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run clear-meadow-22
+wandb: ⭐️ View project at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: 🚀 View run at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/vay4j4pm
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:         epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb: learning_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:    train_loss █▃▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_loss ▁▁▆▃▄▅▄▅▄▅▄▅▄▄▄▂▅▅▆█
+wandb: 
+wandb: Run summary:
+wandb:         epoch 20
+wandb: learning_rate 0.0001
+wandb:    train_loss 0.07822
+wandb:      val_loss 2.54375
+wandb: 
+wandb: 🚀 View run Mercedes_Level_160_1 at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/vay4j4pm
+wandb: ⭐️ View project at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250701_014350-vay4j4pm/logs
+2025/07/01 01:44:36 INFO handleInformFinish: finish message received streamId=vay4j4pm id=127.0.0.1:39462
+2025/07/01 01:44:36 INFO handleInformFinish: stream closed streamId=vay4j4pm id=127.0.0.1:39462
+Created datasets:
+- Training samples: 261
+- Validation samples: 261
+- Test samples: 809
+- Using frequency type: 0
+
+Starting finetuning...160, 1
+
+Finetuning completed!
+Training history: 20 epochs
+Previsão sem covariáveis: Mercedes_Level_160_1
+
+Running finetuning with context_len=160, horizon_len=7
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 97997.76it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 102801.57it/s]
+2025/07/01 01:45:17 INFO handleInformInit: received streamId=ooise8pt id=127.0.0.1:39462
+2025/07/01 01:45:18 INFO handleInformInit: stream started streamId=ooise8pt id=127.0.0.1:39462
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /media/work/guisouza/Ic_TimeSeries_FM/wandb/run-20250701_014517-ooise8pt
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run effortless-waterfall-23
+wandb: ⭐️ View project at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: 🚀 View run at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/ooise8pt
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:         epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb: learning_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:    train_loss █▄▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_loss ▆▂▆█▄▅▅▅▅▃▄▄▂▃▄▂▁▁▂▂
+wandb: 
+wandb: Run summary:
+wandb:         epoch 20
+wandb: learning_rate 0.0001
+wandb:    train_loss 0.05861
+wandb:      val_loss 2.38576
+wandb: 
+wandb: 🚀 View run Mercedes_Level_160_7 at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/ooise8pt
+wandb: ⭐️ View project at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250701_014517-ooise8pt/logs
+2025/07/01 01:46:04 INFO handleInformFinish: finish message received streamId=ooise8pt id=127.0.0.1:39462
+2025/07/01 01:46:04 INFO handleInformFinish: stream closed streamId=ooise8pt id=127.0.0.1:39462
+Created datasets:
+- Training samples: 261
+- Validation samples: 261
+- Test samples: 809
+- Using frequency type: 0
+
+Starting finetuning...160, 7
+
+Finetuning completed!
+Training history: 20 epochs
+Previsão sem covariáveis: Mercedes_Level_160_7
+
+Running finetuning with context_len=160, horizon_len=15
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 117159.33it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 82565.04it/s]
+2025/07/01 01:46:41 INFO handleInformInit: received streamId=e0o1f5xu id=127.0.0.1:39462
+2025/07/01 01:46:41 INFO handleInformInit: stream started streamId=e0o1f5xu id=127.0.0.1:39462
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /media/work/guisouza/Ic_TimeSeries_FM/wandb/run-20250701_014641-e0o1f5xu
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run flowing-haze-24
+wandb: ⭐️ View project at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: 🚀 View run at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/e0o1f5xu
+wandb: uploading history steps 19-19, summary
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:         epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb: learning_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:    train_loss █▃▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_loss ▁▅▅▄▇██▇▆▇▆▆▆▆▆▅▄▄▄▄
+wandb: 
+wandb: Run summary:
+wandb:         epoch 20
+wandb: learning_rate 0.0001
+wandb:    train_loss 0.05866
+wandb:      val_loss 2.39765
+wandb: 
+wandb: 🚀 View run Mercedes_Level_160_15 at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/e0o1f5xu
+wandb: ⭐️ View project at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250701_014641-e0o1f5xu/logs
+2025/07/01 01:47:29 INFO handleInformFinish: finish message received streamId=e0o1f5xu id=127.0.0.1:39462
+2025/07/01 01:47:29 INFO handleInformFinish: stream closed streamId=e0o1f5xu id=127.0.0.1:39462
+Created datasets:
+- Training samples: 261
+- Validation samples: 261
+- Test samples: 809
+- Using frequency type: 0
+
+Starting finetuning...160, 15
+
+Finetuning completed!
+Training history: 20 epochs
+Previsão sem covariáveis: Mercedes_Level_160_15
+
+Running finetuning with context_len=160, horizon_len=30
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 86659.17it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 87381.33it/s]
+2025/07/01 01:48:12 INFO handleInformInit: received streamId=7roxj7aj id=127.0.0.1:39462
+2025/07/01 01:48:12 INFO handleInformInit: stream started streamId=7roxj7aj id=127.0.0.1:39462
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /media/work/guisouza/Ic_TimeSeries_FM/wandb/run-20250701_014812-7roxj7aj
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run sandy-capybara-25
+wandb: ⭐️ View project at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: 🚀 View run at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/7roxj7aj
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:         epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb: learning_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:    train_loss █▃▃▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_loss ▃▃███▃▄▆▃▅▃▄▃▃▂▂▁▄▂▃
+wandb: 
+wandb: Run summary:
+wandb:         epoch 20
+wandb: learning_rate 0.0001
+wandb:    train_loss 0.03772
+wandb:      val_loss 2.23322
+wandb: 
+wandb: 🚀 View run Mercedes_Level_160_30 at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/7roxj7aj
+wandb: ⭐️ View project at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250701_014812-7roxj7aj/logs
+2025/07/01 01:48:58 INFO handleInformFinish: finish message received streamId=7roxj7aj id=127.0.0.1:39462
+2025/07/01 01:48:58 INFO handleInformFinish: stream closed streamId=7roxj7aj id=127.0.0.1:39462
+Created datasets:
+- Training samples: 261
+- Validation samples: 261
+- Test samples: 809
+- Using frequency type: 0
+
+Starting finetuning...160, 30
+
+Finetuning completed!
+Training history: 20 epochs
+Previsão sem covariáveis: Mercedes_Level_160_30
+
+Running finetuning with context_len=352, horizon_len=1
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 56679.78it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 94042.69it/s]
+2025/07/01 01:49:41 INFO handleInformInit: received streamId=d2d2zy23 id=127.0.0.1:39462
+2025/07/01 01:49:42 INFO handleInformInit: stream started streamId=d2d2zy23 id=127.0.0.1:39462
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /media/work/guisouza/Ic_TimeSeries_FM/wandb/run-20250701_014941-d2d2zy23
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run light-wind-26
+wandb: ⭐️ View project at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: 🚀 View run at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/d2d2zy23
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:         epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb: learning_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:    train_loss █▅▄▃▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_loss ▇▅▃█▁▅▃▃▃▄▃▄▄▄▅▄▄▄▄▄
+wandb: 
+wandb: Run summary:
+wandb:         epoch 20
+wandb: learning_rate 0.0001
+wandb:    train_loss 0.04136
+wandb:      val_loss 5.92651
+wandb: 
+wandb: 🚀 View run Mercedes_Level_352_1 at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/d2d2zy23
+wandb: ⭐️ View project at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250701_014941-d2d2zy23/logs
+2025/07/01 01:50:01 INFO handleInformFinish: finish message received streamId=d2d2zy23 id=127.0.0.1:39462
+2025/07/01 01:50:01 INFO handleInformFinish: stream closed streamId=d2d2zy23 id=127.0.0.1:39462
+Created datasets:
+- Training samples: 69
+- Validation samples: 69
+- Test samples: 617
+- Using frequency type: 0
+
+Starting finetuning...352, 1
+
+Finetuning completed!
+Training history: 20 epochs
+Previsão sem covariáveis: Mercedes_Level_352_1
+
+Running finetuning with context_len=352, horizon_len=7
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 105384.52it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 53227.21it/s]
+2025/07/01 01:50:37 INFO handleInformInit: received streamId=amhgjxsv id=127.0.0.1:39462
+2025/07/01 01:50:37 INFO handleInformInit: stream started streamId=amhgjxsv id=127.0.0.1:39462
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /media/work/guisouza/Ic_TimeSeries_FM/wandb/run-20250701_015037-amhgjxsv
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run earnest-elevator-27
+wandb: ⭐️ View project at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: 🚀 View run at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/amhgjxsv
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:         epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb: learning_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:    train_loss ██▄▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_loss ▅▁█▄▇▂▂▅▃▆▃▅▃▄▄▄▃▅▄▄
+wandb: 
+wandb: Run summary:
+wandb:         epoch 20
+wandb: learning_rate 0.0001
+wandb:    train_loss 0.05206
+wandb:      val_loss 6.63138
+wandb: 
+wandb: 🚀 View run Mercedes_Level_352_7 at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/amhgjxsv
+wandb: ⭐️ View project at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250701_015037-amhgjxsv/logs
+2025/07/01 01:50:57 INFO handleInformFinish: finish message received streamId=amhgjxsv id=127.0.0.1:39462
+2025/07/01 01:50:57 INFO handleInformFinish: stream closed streamId=amhgjxsv id=127.0.0.1:39462
+Created datasets:
+- Training samples: 69
+- Validation samples: 69
+- Test samples: 617
+- Using frequency type: 0
+
+Starting finetuning...352, 7
+
+Finetuning completed!
+Training history: 20 epochs
+Previsão sem covariáveis: Mercedes_Level_352_7
+
+Running finetuning with context_len=352, horizon_len=15
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 103307.98it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 97090.37it/s]
+2025/07/01 01:51:29 INFO handleInformInit: received streamId=1036u1q9 id=127.0.0.1:39462
+2025/07/01 01:51:29 INFO handleInformInit: stream started streamId=1036u1q9 id=127.0.0.1:39462
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /media/work/guisouza/Ic_TimeSeries_FM/wandb/run-20250701_015129-1036u1q9
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run giddy-monkey-28
+wandb: ⭐️ View project at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: 🚀 View run at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/1036u1q9
+wandb: uploading config.yaml
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:         epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb: learning_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:    train_loss ▇▄█▃▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_loss ▁█▁▂▁▂▁▂▂▁▁▁▂▂▁▂▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:         epoch 20
+wandb: learning_rate 0.0001
+wandb:    train_loss 0.06114
+wandb:      val_loss 5.65353
+wandb: 
+wandb: 🚀 View run Mercedes_Level_352_15 at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/1036u1q9
+wandb: ⭐️ View project at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250701_015129-1036u1q9/logs
+2025/07/01 01:51:49 INFO handleInformFinish: finish message received streamId=1036u1q9 id=127.0.0.1:39462
+2025/07/01 01:51:49 INFO handleInformFinish: stream closed streamId=1036u1q9 id=127.0.0.1:39462
+Created datasets:
+- Training samples: 69
+- Validation samples: 69
+- Test samples: 617
+- Using frequency type: 0
+
+Starting finetuning...352, 15
+
+Finetuning completed!
+Training history: 20 epochs
+Previsão sem covariáveis: Mercedes_Level_352_15
+
+Running finetuning with context_len=352, horizon_len=30
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 38339.16it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 104335.92it/s]
+2025/07/01 01:52:21 INFO handleInformInit: received streamId=2hod2u3j id=127.0.0.1:39462
+2025/07/01 01:52:21 INFO handleInformInit: stream started streamId=2hod2u3j id=127.0.0.1:39462
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /media/work/guisouza/Ic_TimeSeries_FM/wandb/run-20250701_015221-2hod2u3j
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run gentle-meadow-29
+wandb: ⭐️ View project at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: 🚀 View run at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/2hod2u3j
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:         epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb: learning_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:    train_loss █▅▃▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_loss ▃▁▇▅▅█▅▆▆▇▆▆▅▆▆▆▆▆▆▆
+wandb: 
+wandb: Run summary:
+wandb:         epoch 20
+wandb: learning_rate 0.0001
+wandb:    train_loss 0.03736
+wandb:      val_loss 6.64087
+wandb: 
+wandb: 🚀 View run Mercedes_Level_352_30 at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/2hod2u3j
+wandb: ⭐️ View project at: https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250701_015221-2hod2u3j/logs
+2025/07/01 01:52:42 INFO handleInformFinish: finish message received streamId=2hod2u3j id=127.0.0.1:39462
+2025/07/01 01:52:42 INFO handleInformFinish: stream closed streamId=2hod2u3j id=127.0.0.1:39462
+Created datasets:
+- Training samples: 69
+- Validation samples: 69
+- Test samples: 617
+- Using frequency type: 0
+
+Starting finetuning...352, 30
+
+Finetuning completed!
+Training history: 20 epochs
+Previsão sem covariáveis: Mercedes_Level_352_30
+
+Running finetuning with context_len=480, horizon_len=1
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 107546.26it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 112147.17it/s]
+2025/07/01 01:53:11 INFO handleInformInit: received streamId=wb4is3ko id=127.0.0.1:39462
+2025/07/01 01:53:12 INFO handleInformInit: stream started streamId=wb4is3ko id=127.0.0.1:39462
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /media/work/guisouza/Ic_TimeSeries_FM/wandb/run-20250701_015311-wb4is3ko
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run ancient-bush-30
+wandb: ⭐️ View project at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning
+wandb: 🚀 View run at https://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/wb4is3ko
+Created datasets:
+- Training samples: 0
+- Validation samples: 0
+- Test samples: 489
+- Using frequency type: 0
+
+Starting finetuning...480, 1
+Traceback (most recent call last):
+  File "/media/work/guisouza/Ic_TimeSeries_FM/timesfm/finetuning_torch.py", line 441, in <module>
+    predict_separated_finetunning()
+  File "/media/work/guisouza/Ic_TimeSeries_FM/timesfm/finetuning_torch.py", line 373, in predict_separated_finetunning
+    simple_data = single_gpu_example(context_len=context_len, horizon_len=horizon_len, pred_name=simple_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/work/guisouza/Ic_TimeSeries_FM/timesfm/finetuning_torch.py", line 338, in single_gpu_example
+    results = finetuner.finetune(train_dataset=train_dataset, val_dataset=val_dataset)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/extralibs/finetuning/finetuning_torch.py", line 351, in finetune
+    train_loader = self._create_dataloader(train_dataset, is_train=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/extralibs/finetuning/finetuning_torch.py", line 229, in _create_dataloader
+    return DataLoader(
+           ^^^^^^^^^^^
+  File "/usr/local/extralibs/torch/utils/data/dataloader.py", line 385, in __init__
+    sampler = RandomSampler(dataset, generator=generator)  # type: ignore[arg-type]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/extralibs/torch/utils/data/sampler.py", line 156, in __init__
+    raise ValueError(
+ValueError: num_samples should be a positive integer value, but got num_samples=0
+2025/07/01 01:53:13 INFO handleInformTeardown: server teardown initiated id=127.0.0.1:39462
+2025/07/01 01:53:13 INFO server is shutting down
+2025/07/01 01:53:13 INFO connection: closing id=127.0.0.1:39462
+2025/07/01 01:53:13 INFO connection: closed successfully id=127.0.0.1:39462
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33mancient-bush-30[0m at: [34mhttps://wandb.ai/guilherme-ss-universidade-federal-de-ouro-preto/timesfm-finetuning/runs/wb4is3ko[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250701_015311-wb4is3ko/logs[0m
+2025/07/01 01:53:14 INFO handleInformTeardown: server shutdown complete id=127.0.0.1:39462
+2025/07/01 01:53:14 INFO connection: ManageConnectionData: connection closed id=127.0.0.1:39462
+2025/07/01 01:53:14 INFO server is closed
+/media/work/guisouza/Ic_TimeSeries_FM/timesfm/finetuning_torch.py:22: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df = pd.read_csv(url, index_col=0, parse_dates=True)
+ See https://github.com/google-research/timesfm/blob/master/README.md for updated APIs.
+Loaded PyTorch TimesFM, likely because python version is 3.11.0rc1 (main, Aug 12 2022, 10:02:14) [GCC 11.2.0].
+
+Running finetuning with context_len=32, horizon_len=1
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 96642.95it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 80659.69it/s]
+Created datasets:
+- Training samples: 389
+- Validation samples: 389
+- Test samples: 937
+- Using frequency type: 0
+Traceback (most recent call last):
+  File "/media/work/guisouza/Ic_TimeSeries_FM/timesfm/finetuning_torch.py", line 441, in <module>
+    predict_separated_finetunning()
+  File "/media/work/guisouza/Ic_TimeSeries_FM/timesfm/finetuning_torch.py", line 373, in predict_separated_finetunning
+    simple_data = single_gpu_example(context_len=context_len, horizon_len=horizon_len, pred_name=simple_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/work/guisouza/Ic_TimeSeries_FM/timesfm/finetuning_torch.py", line 336, in single_gpu_example
+    wandb.run.name = pred_name
+    ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'name'
+/media/work/guisouza/Ic_TimeSeries_FM/timesfm/finetuning_torch.py:22: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df = pd.read_csv(url, index_col=0, parse_dates=True)
+ See https://github.com/google-research/timesfm/blob/master/README.md for updated APIs.
+Loaded PyTorch TimesFM, likely because python version is 3.11.0rc1 (main, Aug 12 2022, 10:02:14) [GCC 11.2.0].
+
+Running finetuning with context_len=32, horizon_len=1
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 84562.58it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 78840.30it/s]
+Created datasets:
+- Training samples: 389
+- Validation samples: 389
+- Test samples: 937
+- Using frequency type: 0
+
+Starting finetuning...32, 1
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_32_1
+
+Running finetuning with context_len=32, horizon_len=7
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 102801.57it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 104857.60it/s]
+Created datasets:
+- Training samples: 389
+- Validation samples: 389
+- Test samples: 937
+- Using frequency type: 0
+
+Starting finetuning...32, 7
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_32_7
+
+Running finetuning with context_len=32, horizon_len=15
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 98922.26it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 97541.95it/s]
+Created datasets:
+- Training samples: 389
+- Validation samples: 389
+- Test samples: 937
+- Using frequency type: 0
+
+Starting finetuning...32, 15
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_32_15
+
+Running finetuning with context_len=32, horizon_len=30
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 110960.42it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 95325.09it/s]
+Created datasets:
+- Training samples: 389
+- Validation samples: 389
+- Test samples: 937
+- Using frequency type: 0
+
+Starting finetuning...32, 30
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_32_30
+
+Running finetuning with context_len=160, horizon_len=1
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 87381.33it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 75983.77it/s]
+Created datasets:
+- Training samples: 261
+- Validation samples: 261
+- Test samples: 809
+- Using frequency type: 0
+
+Starting finetuning...160, 1
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_160_1
+
+Running finetuning with context_len=160, horizon_len=7
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 101311.69it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 45392.90it/s]
+Created datasets:
+- Training samples: 261
+- Validation samples: 261
+- Test samples: 809
+- Using frequency type: 0
+
+Starting finetuning...160, 7
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_160_7
+
+Running finetuning with context_len=160, horizon_len=15
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 78251.94it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 103819.41it/s]
+Created datasets:
+- Training samples: 261
+- Validation samples: 261
+- Test samples: 809
+- Using frequency type: 0
+
+Starting finetuning...160, 15
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_160_15
+
+Running finetuning with context_len=160, horizon_len=30
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 5700.33it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 104857.60it/s]
+Created datasets:
+- Training samples: 261
+- Validation samples: 261
+- Test samples: 809
+- Using frequency type: 0
+
+Starting finetuning...160, 30
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_160_30
+
+Running finetuning with context_len=352, horizon_len=1
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 108660.73it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 76538.39it/s]
+Created datasets:
+- Training samples: 69
+- Validation samples: 69
+- Test samples: 617
+- Using frequency type: 0
+
+Starting finetuning...352, 1
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_352_1
+
+Running finetuning with context_len=352, horizon_len=7
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 100824.62it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 99864.38it/s]
+Created datasets:
+- Training samples: 69
+- Validation samples: 69
+- Test samples: 617
+- Using frequency type: 0
+
+Starting finetuning...352, 7
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_352_7
+
+Running finetuning with context_len=352, horizon_len=15
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 100824.62it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 103819.41it/s]
+Created datasets:
+- Training samples: 69
+- Validation samples: 69
+- Test samples: 617
+- Using frequency type: 0
+
+Starting finetuning...352, 15
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_352_15
+
+Running finetuning with context_len=352, horizon_len=30
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 104335.92it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 118483.16it/s]
+Created datasets:
+- Training samples: 69
+- Validation samples: 69
+- Test samples: 617
+- Using frequency type: 0
+
+Starting finetuning...352, 30
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_352_30
+
+Running finetuning with context_len=480, horizon_len=1
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 101803.50it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 87018.76it/s]
+Created datasets:
+- Training samples: 0
+- Validation samples: 0
+- Test samples: 489
+- Using frequency type: 0
+
+Starting finetuning...480, 1
+Traceback (most recent call last):
+  File "/media/work/guisouza/Ic_TimeSeries_FM/timesfm/finetuning_torch.py", line 441, in <module>
+    predict_separated_finetunning()
+  File "/media/work/guisouza/Ic_TimeSeries_FM/timesfm/finetuning_torch.py", line 373, in predict_separated_finetunning
+    simple_data = single_gpu_example(context_len=context_len, horizon_len=horizon_len, pred_name=simple_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/work/guisouza/Ic_TimeSeries_FM/timesfm/finetuning_torch.py", line 338, in single_gpu_example
+    results = finetuner.finetune(train_dataset=train_dataset, val_dataset=val_dataset)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/extralibs/finetuning/finetuning_torch.py", line 351, in finetune
+    train_loader = self._create_dataloader(train_dataset, is_train=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/extralibs/finetuning/finetuning_torch.py", line 229, in _create_dataloader
+    return DataLoader(
+           ^^^^^^^^^^^
+  File "/usr/local/extralibs/torch/utils/data/dataloader.py", line 385, in __init__
+    sampler = RandomSampler(dataset, generator=generator)  # type: ignore[arg-type]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/extralibs/torch/utils/data/sampler.py", line 156, in __init__
+    raise ValueError(
+ValueError: num_samples should be a positive integer value, but got num_samples=0
+/media/work/guisouza/Ic_TimeSeries_FM/timesfm/finetuning_torch.py:22: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df = pd.read_csv(url, index_col=0, parse_dates=True)
+ See https://github.com/google-research/timesfm/blob/master/README.md for updated APIs.
+Loaded PyTorch TimesFM, likely because python version is 3.11.0rc1 (main, Aug 12 2022, 10:02:14) [GCC 11.2.0].
+
+Running finetuning with context_len=32, horizon_len=1
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 80350.65it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 88115.63it/s]
+Created datasets:
+- Training samples: 389
+- Validation samples: 389
+- Test samples: 937
+- Using frequency type: 0
+
+Starting finetuning...32, 1
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_32_1
+
+Running finetuning with context_len=32, horizon_len=7
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 92794.34it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 89621.88it/s]
+Created datasets:
+- Training samples: 389
+- Validation samples: 389
+- Test samples: 937
+- Using frequency type: 0
+
+Starting finetuning...32, 7
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_32_7
+
+Running finetuning with context_len=32, horizon_len=15
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 95760.37it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 103307.98it/s]
+Created datasets:
+- Training samples: 389
+- Validation samples: 389
+- Test samples: 937
+- Using frequency type: 0
+
+Starting finetuning...32, 15
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_32_15
+
+Running finetuning with context_len=32, horizon_len=30
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 95325.09it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 81601.25it/s]
+Created datasets:
+- Training samples: 389
+- Validation samples: 389
+- Test samples: 937
+- Using frequency type: 0
+
+Starting finetuning...32, 30
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_32_30
+
+Running finetuning with context_len=160, horizon_len=1
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 61320.23it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 105916.77it/s]
+Created datasets:
+- Training samples: 261
+- Validation samples: 261
+- Test samples: 809
+- Using frequency type: 0
+
+Starting finetuning...160, 1
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_160_1
+
+Running finetuning with context_len=160, horizon_len=7
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 101803.50it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 105384.52it/s]
+Created datasets:
+- Training samples: 261
+- Validation samples: 261
+- Test samples: 809
+- Using frequency type: 0
+
+Starting finetuning...160, 7
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_160_7
+
+Running finetuning with context_len=160, horizon_len=15
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 104857.60it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 97090.37it/s]
+Created datasets:
+- Training samples: 261
+- Validation samples: 261
+- Test samples: 809
+- Using frequency type: 0
+
+Starting finetuning...160, 15
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_160_15
+
+Running finetuning with context_len=160, horizon_len=30
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 119156.36it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 89240.51it/s]
+Created datasets:
+- Training samples: 261
+- Validation samples: 261
+- Test samples: 809
+- Using frequency type: 0
+
+Starting finetuning...160, 30
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_160_30
+
+Running finetuning with context_len=352, horizon_len=1
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 115228.13it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 108100.62it/s]
+Created datasets:
+- Training samples: 69
+- Validation samples: 69
+- Test samples: 617
+- Using frequency type: 0
+
+Starting finetuning...352, 1
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_352_1
+
+Running finetuning with context_len=352, horizon_len=7
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 102300.10it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 92794.34it/s]
+Created datasets:
+- Training samples: 69
+- Validation samples: 69
+- Test samples: 617
+- Using frequency type: 0
+
+Starting finetuning...352, 7
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_352_7
+
+Running finetuning with context_len=352, horizon_len=15
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 104857.60it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 105916.77it/s]
+Created datasets:
+- Training samples: 69
+- Validation samples: 69
+- Test samples: 617
+- Using frequency type: 0
+
+Starting finetuning...352, 15
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_352_15
+
+Running finetuning with context_len=352, horizon_len=30
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 107546.26it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 104857.60it/s]
+Created datasets:
+- Training samples: 69
+- Validation samples: 69
+- Test samples: 617
+- Using frequency type: 0
+
+Starting finetuning...352, 30
+
+Finetuning completed!
+Training history: 6 epochs
+Previsão sem covariáveis: Mercedes_Level_352_30
+CSV salvo em: finetuning_results_separated_finetunning_1.csv
