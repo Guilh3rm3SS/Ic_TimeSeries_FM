@@ -1,0 +1,15 @@
+/media/work/guisouza/Ic_TimeSeries_FM/darts/darts_forecast_cov.py:181: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  full_df = pd.read_csv(url, index_col=0, parse_dates=True)
+Traceback (most recent call last):
+  File "/media/work/guisouza/Ic_TimeSeries_FM/darts/darts_forecast_cov.py", line 239, in <module>
+    main()
+  File "/media/work/guisouza/Ic_TimeSeries_FM/darts/darts_forecast_cov.py", line 187, in main
+    series = TimeSeries.from_dataframe(full_df, time_col='dt')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/work/guisouza/Ic_TimeSeries_FM/darts/.venv/lib/python3.11/site-packages/darts/timeseries.py", line 889, in from_dataframe
+    return cls(
+           ^^^^
+  File "/media/work/guisouza/Ic_TimeSeries_FM/darts/.venv/lib/python3.11/site-packages/darts/timeseries.py", line 224, in __init__
+    values = values.astype(np.float64)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: '2015-01-01 07:00:00'
